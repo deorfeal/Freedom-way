@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <header class="header">
+    <header class="header" data-aos="fade-down">
         <div class="container">
             <div class="header__inner">
                 <a class="header__logo logo" href="#">
@@ -30,8 +31,13 @@
                             </a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">
+                            <a class="menu__list-link" href="#calculator">
                                 Калькулятор доходности
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link">
+                                FAQ
                             </a>
                         </li>
                     </ul>
@@ -48,7 +54,7 @@
             <section class="main__section-top section-top">
                 <div class="container">
                     <div class="section-top__inner">
-                        <div class="section-top__content">
+                        <div class="section-top__content" data-aos="fade-right">
                             <h1 class="section-top__content-title">
                                 Роботизированное решение арбитражных процессов в криптовалюте.
                             </h1>
@@ -57,11 +63,11 @@
                                 процессов на платформе FREEDOM WAY.
                             </p>
                         </div>
-                        <div class="section-top__img">
+                        <div class="section-top__img" data-aos="fade-left">
                             <img class="section-top__img-image" src="images/section-top-img.webp" alt="img">
                         </div>
                     </div>
-                    <a class="section-top__link" href="#">
+                    <a class="section-top__link" href="#text-block--first" data-aos="fade-down">
                         <span>
                             Больше информации
                         </span>
@@ -72,22 +78,10 @@
                     </a>
                 </div>
             </section>
-            <section class="main__text-block text-block">
+            <section class="main__text-block text-block text-block--first" id="text-block--first">
                 <div class="container">
                     <div class="text-block__inner">
-                        <div class="text-block__content text-block-content">
-                            <h2 class="text-block-content__title title">
-                                Используй как анонимный криптовалютный кошелек, Инвестируй с помощью FREEDOM WAY.
-                            </h2>
-                            <p class="text-block-content__text">
-                                Платформа FREEDOM WAY. Позволяет анонимно и безопасно хранить ваши активы и приумножать
-                                их.
-                                Ваши средства защищены и не передаются третьим лицам.
-                                Используйте платформу как анонимный кошелек который приносит пассивный доход с помощью
-                                роботизированного арбитражного процесса.
-                            </p>
-                        </div>
-                        <div class="text-block__img">
+                        <div class="text-block__img" data-aos="fade-right">
                             <svg xmlns="http://www.w3.org/2000/svg" width="415" height="437" viewBox="0 0 415 437"
                                 fill="none">
                                 <path
@@ -482,13 +476,25 @@
                                 </defs>
                             </svg>
                         </div>
+                        <div class="text-block__content text-block-content" data-aos="fade-left">
+                            <h2 class="text-block-content__title title">
+                                Используй как анонимный криптовалютный кошелек, Инвестируй с помощью FREEDOM WAY.
+                            </h2>
+                            <p class="text-block-content__text">
+                                Платформа FREEDOM WAY. Позволяет анонимно и безопасно хранить ваши активы и приумножать
+                                их.
+                                Ваши средства защищены и не передаются третьим лицам.
+                                Используйте платформу как анонимный кошелек который приносит пассивный доход с помощью
+                                роботизированного арбитражного процесса.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
             <section class="main__text-block text-block">
                 <div class="container">
                     <div class="text-block__inner">
-                        <div class="text-block__content text-block-content">
+                        <div class="text-block__content text-block-content" data-aos="fade-right">
                             <h2 class="text-block-content__title title">
                                 Инвестировать проще чем кажется
                             </h2>
@@ -507,7 +513,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="text-block__img">
+                        <div class="text-block__img" data-aos="fade-left">
                             <svg xmlns="http://www.w3.org/2000/svg" width="581" height="414" viewBox="0 0 581 414"
                                 fill="none">
                                 <path
@@ -794,24 +800,80 @@
                     </div>
                 </div>
             </section>
+            <section class="main__calculator calculator" id="calculator">
+                <div class="container">
+                    <div class="calculator__inner">
+                        <h2 class="calculator__title title">
+                            Калькулятор доходности
+                        </h2>
+                        <form class="calculator__form calculator-form" action="#">
+                            <div class="calculator-form__box">
+                                <input class="calculator-form__input" type="text" placeholder="Укажите сумму Баланса">
+                                <input class="calculator-form__input" type="text" placeholder="Укажите количество дней">
+                                <input class="calculator-form__input" type="text"
+                                    placeholder="Укажите Ваш уровень ( от 1 до 5 )">
+                            </div>
+                            <button class="calculator-form__button" type="button">
+                                Рассчитать прибыль
+                            </button>
+                            <div class="calculator-form__info">
+                                <p class="calculator-form__info-text">
+                                    Ваш уровень:
+                                    <span>
+                                        1
+                                    </span>
+                                </p>
+                                <p class="calculator-form__info-text">
+                                    Ваши инвестиции:
+                                    <span>
+                                        1000 USDT
+                                    </span>
+                                </p>
+                                <p class="calculator-form__info-text">
+                                    Количество дней:
+                                    <span>
+                                        30
+                                    </span>
+                                </p>
+                                <p class="calculator-form__info-text">
+                                    Ваша доходность:
+                                    <span>
+                                        1% в день.
+                                    </span>
+                                </p>
+                                <p class="calculator-form__info-text">
+                                    Итого:
+                                    <span>
+                                        Чистая прибыль составит 300 USDT
+                                    </span>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
             <section class="main__video video">
                 <div class="container">
                     <h2 class="video__title title">
                         Что такое Freedom Way ?
                     </h2>
-                    <a class="video__view" href="#">
+                    <div class="video__view video-view" href="#">
+                        <div class="video-view__fade">
+                            <div class="video-view__fade-icon">
+                                <svg class="video__view-play" xmlns="http://www.w3.org/2000/svg" width="23" height="28"
+                                    viewBox="0 0 23 28" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.976562 13.7469V25.0549C0.976562 26.6431 2.73876 27.5977 4.0691 26.7301L21.4079 15.4222C22.6178 14.6331 22.6178 12.8608 21.4079 12.0717L4.0691 0.763819C2.73876 -0.103793 0.976562 0.850786 0.976562 2.43904V13.7469Z"
+                                        fill="white"></path>
+                                </svg>
+                            </div>
+                        </div>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/YVgfHZMFFFQ"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen>
                         </iframe>
-                        <svg class="video__view-play" xmlns="http://www.w3.org/2000/svg" width="23" height="28"
-                            viewBox="0 0 23 28" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M0.976562 13.7469V25.0549C0.976562 26.6431 2.73876 27.5977 4.0691 26.7301L21.4079 15.4222C22.6178 14.6331 22.6178 12.8608 21.4079 12.0717L4.0691 0.763819C2.73876 -0.103793 0.976562 0.850786 0.976562 2.43904V13.7469Z"
-                                fill="white"></path>
-                        </svg>
-                    </a>
+                    </div>
                 </div>
             </section>
         </main>
@@ -868,6 +930,7 @@
         </footer>
     </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
