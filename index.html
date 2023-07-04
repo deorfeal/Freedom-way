@@ -826,9 +826,9 @@
                         </h2>
                         <form class="calculator__form calculator-form" action="#">
                             <div class="calculator-form__box">
-                                <input class="calculator-form__input" type="text" placeholder="Укажите сумму Баланса" id="0">
-                                <input class="calculator-form__input" type="text" placeholder="Укажите количество дней" id="1">
-                                <input class="calculator-form__input" type="text"
+                                <input class="calculator-form__input calculator-form__input--first" type="number" placeholder="Укажите сумму Баланса" id="0">
+                                <input class="calculator-form__input calculator-form__input--second" type="number" placeholder="Укажите количество дней" id="1">
+                                <input class="calculator-form__input calculator-form__input--third" min="1" max="5" type="number"
                                     placeholder="Укажите Ваш уровень ( от 1 до 5 )" id="2">
                             </div>
                             <button class="calculator-form__button" type="button">
@@ -837,31 +837,31 @@
                             <div class="calculator-form__info">
                                 <p class="calculator-form__info-text" id="0">
                                     Ваш уровень:
-                                    <span>
+                                    <span class="calculator-form__info-text--fisrt">
                                         1
                                     </span>
                                 </p>
                                 <p class="calculator-form__info-text" id="1">
                                     Ваши инвестиции:
-                                    <span>
+                                    <span class="calculator-form__info-text--second">
                                         1000 USDT
                                     </span>
                                 </p>
                                 <p class="calculator-form__info-text" id="2">
                                     Количество дней:
-                                    <span>
+                                    <span class="calculator-form__info-text--third">
                                         30
                                     </span>
                                 </p>
                                 <p class="calculator-form__info-text" id="3">
                                     Ваша доходность:
-                                    <span>
+                                    <span class="calculator-form__info-text--fourth">
                                         1% в день.
                                     </span>
                                 </p>
                                 <p class="calculator-form__info-text" id="4">
                                     Итого:
-                                    <span>
+                                    <span class="calculator-form__info-text--fifth">
                                         Чистая прибыль составит 300 USDT
                                     </span>
                                 </p>
@@ -870,7 +870,7 @@
                     </div>
                 </div>
             </section> 
-            <section class="main__video video">
+            <!-- <section class="main__video video">
                 <div class="container">
                     <h2 class="video__title title">
                         Что такое Freedom Way ?
@@ -893,7 +893,7 @@
                         </iframe>
                     </div>
                 </div>
-            </section> 
+            </section>  -->
         </main>
         <footer class="footer">
             <div class="container">
